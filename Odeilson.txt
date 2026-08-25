@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+def p(x):
+    return np.sin(x**2)*np.tan(x)/np.tanh(x/2)+x
+
+x = np.linspace(-5, 5, 1000)
+y = p(x)
+plt.plot(y)
+plt.grid(True, alpha=0.3)
+plt.show()
